@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { auth } from "@/auth";
-import { signIn ,signOut } from "next-auth/react";
+import { auth , signIn ,signOut } from "@/auth";
 
 const Navbar = async () => {
   const session = await auth();
